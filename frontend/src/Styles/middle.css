@@ -1,0 +1,29 @@
+.container{
+    border: 1px solid red;
+    /* height: 25rem; */
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #283d66;
+}
+
+.container .area1,.area2{
+    border: 1px solid green;
+    width: 50%;
+}
+
+.container .area1{
+    margin:5rem 1rem 1rem 4rem
+}
+.container .area1 .row1{
+    color: white;
+    font-size: 1.5rem;
+}
+.container .area1 .row2{
+    /* border: 1px solid red; */
+    /* float: left; */
+    /* width: %; */
+    margin-right: 10%;
+    font-size: 0.9rem;
+    color: rgb(176, 199, 221);
+}

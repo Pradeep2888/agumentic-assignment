@@ -1,0 +1,114 @@
+.container1{
+    /* border: 1px solid red; */
+    width:100% ;
+    /* height: 50vw; */
+    background-color: #141c2b;
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    /* padding-top:2rem ; */
+}
+
+.container1 .left,.right{
+    width: 50%;
+    /* border: 1px solid green; */
+    margin-bottom: 4rem;
+}
+
+.container1 .left{
+ margin-left: 3rem;
+}
+
+.container1 .left .row1{
+ margin-right: 30%;
+ font-weight: 900;
+ font-size: 1.5rem  ; 
+ /* border: 1px solid red; */
+ overflow: hidden;
+}
+
+.container1 .left .row2{
+    /* border: 1px solid red; */
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 0.8rem;
+    color: rgb(160, 179, 198);
+    overflow: hidden;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+    
+}
+
+.container1 .left .row3 button{
+    display: flex;
+    width: 10rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#2642af;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin-bottom: 4rem;
+}
+.container1 .left .row3 button .w-6h-6{
+    width: 15%;
+}
+
+.container1 .row4{
+    display: flex;
+    height: 5rem;
+    width: 50%;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* border: 1px solid green; */
+}
+.container1 .row4 .box1{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: auto; */
+}
+.container1 .row4 .box1 svg{
+    height: 30%;
+    /* background-color: yellow; */
+}
+.reviews{
+    font-size: 0.5rem;
+    margin-top: -1rem;
+}
+.vl {
+    border-left: 1px solid white;
+    height: 60%;
+  }
+
+
+  .container1 .row4 .box2{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: auto; */
+}
+.container1 .row4 .box2 svg{
+    height: 30%;
+    /* background-color: yellow; */
+}
+
+
+
+.container1 .right{
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    margin-right: 1rem;
+    height:35rem;
+}
+.container1 .right img{
+    width: 100%;
+    height: 100%;
+}

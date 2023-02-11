@@ -1,0 +1,139 @@
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    background-color: #141c2b;
+    /* background-color: #283d66; */
+    /* color: black; */
+    /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
+  }
+  
+  .brand-name {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 1rem;
+  }
+  .brand-name svg{
+    width: 10%;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: white;
+  }
+  
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  .hamburger:hover {
+    background-color: #2642af;
+  }
+
+  .contact-button{
+    display: flex;
+    width: 6rem;
+    justify-content: space-around;
+    height: 2rem;
+    align-items: center;
+    background-color: #2642af;
+    border: none;
+    border-radius: 10px;
+  }
+
+ .contact-button .w-6h-6{
+   height: 50%;
+   color: white;
+  }
+  .contact-button p{
+    color: white;
+  }
+  
+  .contact-button:hover{
+    background-color: rgb(128, 128, 13);
+  }
+
+  @media screen and (max-width: 550px) {
+    .hamburger {
+      display: block;
+    }
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 30%;
+      height: calc(100vh - 430px);
+      background-color: rgb(154, 40, 40);
+      border-top: 1px solid black;
+      display: none;
+      border: 1px solid red;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .navigation-menu li a {
+      color: white;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  
+    .navigation-menu li a:hover {
+      color: black;
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+
+
+    .navigation-menu li button {
+        color: white;
+        width: 90%;
+        font-size: 1rem;
+        margin: auto;
+        /* padding: 1.5rem 0rem 1.5rem ; */
+      }
+
+  }
+
+ 
+  
