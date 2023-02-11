@@ -5,7 +5,7 @@ import Upper from '../Components/Upper'
 function Home() {
   return (
     <div>
-        {/* <Upper/> */}
+        <Upper/>
         <Middle/>
     </div>
   )

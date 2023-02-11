@@ -1,6 +1,7 @@
 .container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* height: 25rem; */
+    position: relative;
     width: 100%;
     display: flex;
     box-sizing: border-box;
@@ -8,12 +9,13 @@
 }
 
 .container .area1,.area2{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 50%;
+    /* margin-bottom: 6rem; */
 }
 
 .container .area1{
-    margin:5rem 1rem 1rem 4rem
+    margin:0rem 1rem 3rem 4rem
 }
 .container .area1 .row1{
     color: white;
@@ -26,4 +28,49 @@
     margin-right: 10%;
     font-size: 0.9rem;
     color: rgb(176, 199, 221);
+}
+
+.container .area1 .row3{
+    /* border: 1px solid red; */
+    margin-top: 1.8rem;
+}
+.container .area1 .row3 button{
+    background-color: transparent;
+    border: 0.1rem solid white;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+
+}
+
+.container .area2{
+    /* border: 1px solid red; */
+    width: 40%;
+    /* height: 60%; */
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,50%);
+    gap: 0.9rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.2rem;
+
+}
+.container .area2 .card{
+    border-radius: 25px;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #374766;
+    /* height: 10rem;
+    width: 7rem; */
+    font-size: small;
+    overflow: hidden;
+}
+
+.container .area2 .card img{
+    width: 20%;
+}
+.container .area2 .card:hover{
+    background-color: #3a5c9e;
 }
