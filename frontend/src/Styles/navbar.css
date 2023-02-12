@@ -88,7 +88,7 @@
     background-color: rgb(128, 128, 13);
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 800px) {
     .hamburger {
       display: block;
     }
@@ -98,7 +98,7 @@
       top: 60px;
       right: 0;
       width: 30%;
-      height: calc(100vh - 430px);
+      height: 13rem;
       background-color: rgb(154, 40, 40);
       border-top: 1px solid black;
       display: none;
@@ -127,7 +127,7 @@
 
     .navigation-menu li button {
         color: white;
-        width: 90%;
+        width: 50%;
         font-size: 1rem;
         margin: auto;
         /* padding: 1.5rem 0rem 1.5rem ; */

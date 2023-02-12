@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Card({icon,title,discription}) {
-    console.log(icon,title,discription)
+    // console.log(icon,title,discription)
   return (
     <div className='card'>
         <img src={icon}  alt='icon' />

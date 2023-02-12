@@ -40,7 +40,12 @@
     color: white;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 10px;
+    cursor: pointer;
 
+}
+.container .area1 .row3 button:hover{
+    background-color:greenyellow;
+    color: black;
 }
 
 .container .area2{
@@ -66,6 +71,7 @@
     width: 7rem; */
     font-size: small;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .container .area2 .card img{
@@ -73,4 +79,51 @@
 }
 .container .area2 .card:hover{
     background-color: #3a5c9e;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+
+    .container{
+        position: relative;
+        /* width: 100%; */
+        display: block;
+        height: 100%;
+        border: 1px solid #283d66;
+    }
+    .container .area1{
+      /* border: 1px solid red; */
+      margin-left: 1rem;
+      margin-right: 0;
+      width: 80%;
+    }
+    .container .area2{
+        position: inherit;
+        width: 100%;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,30%);
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .container .area2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,30%);
+        position: inherit;
+        /* right: 0.5rem;
+        top: 1.2rem; */
+    
+    }
+    .container{
+        position: inherit;
+        /* width: 100%; */
+        display: block;
+        height: 100%;
+        border: 1px solid #283d66;
+    }
 }
