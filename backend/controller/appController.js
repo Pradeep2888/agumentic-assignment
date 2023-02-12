@@ -1,10 +1,11 @@
 const nodemailer = require('nodemailer');
 const Mailgen = require('mailgen');
+const { RequestModel } = require('../models/RequistModel');
 
 const getmail = (req, res) => {
 
 
-    const { userEmail,name } = req.body;
+    const { email,name,number } = req.body;
 
 
 
@@ -38,13 +39,23 @@ const getmail = (req, res) => {
 
     let message = {
         from : "pradeeptiwari2666@gmail.com",
-        to : userEmail,
+        to : email,
         subject: "Thanking Mail From estudee ",
         html: mail
     }
     
+    const new_request=new RequestModel({
+        name,
+        email,
+        number
+
+    })
+    const savedata=async()=>{
+        await new_request.save()
+    }
 
     transporter.sendMail(message).then(() => {
+        savedata()
         return res.status(201).json({
             msg: "you should receive an email"
         })
