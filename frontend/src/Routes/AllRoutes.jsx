@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Adminhame from '../AdminPannel/AdminPage/Adminhame'
+import PrivateRoute from '../Components/PrivateRoute'
 import Contact from '../Pages.jsx/Contact'
 import Home from '../Pages.jsx/Home'
 
@@ -9,6 +11,7 @@ function AllRoutes() {
         <Routes>
             <Route path='/'  element={<Home/>} />
             <Route path='/contact' element={<Contact/>} />
+            <Route path='/adminhome' element={ <PrivateRoute> <Adminhame/></PrivateRoute>} />
         </Routes>
     </div>
   )
