@@ -1,8 +1,15 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
-function Visitar() {
+function Visitar({name,mail,phone}) {
+  console.log(name,mail,phone)
+  
   return (
-    <div>Visitar</div>
+    <div>
+      <ul>
+        <li>{`${name} ${mail} ${phone}`}</li>
+      </ul>
+    </div>
   )
 }
 
