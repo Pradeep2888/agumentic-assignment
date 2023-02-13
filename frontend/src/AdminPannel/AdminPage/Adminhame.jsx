@@ -8,7 +8,7 @@ function Adminhame() {
   const [arr,setArr]=useState()
 
   const getData=()=>{
-    axios.get(`http://localhost:4000/estudee/visitors`)
+    axios.get(`https://backend-argumentic.onrender.com/estudee/visitors`)
     .then((r)=>{
     setArr(r.data.data)
     })

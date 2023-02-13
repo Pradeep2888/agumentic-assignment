@@ -7,7 +7,7 @@ function User() {
   const [arr,setArr]=useState()
 
   const getData=()=>{
-    axios.get(`http://localhost:4000/estudee/users`)
+    axios.get(`https://backend-argumentic.onrender.com/estudee/users`)
     .then((r)=>{
     setArr(r.data.data)
     })
@@ -23,7 +23,7 @@ function User() {
      "admin":status
     }
     // console.log(obj)
-    axios.patch("http://localhost:4000/estudee/usersupdate",obj)
+    axios.patch("https://backend-argumentic.onrender.com/estudee/usersupdate",obj)
     .then((r)=>{
       
       getData()
